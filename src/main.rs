@@ -35,7 +35,7 @@ fn main() {
         }
     });
 
-    // Ожидание нажатия Ctrl+End для завершения программы
+    // Waiting for Ctrl+End to close the program
 
     loop {
     
@@ -52,7 +52,7 @@ fn main() {
         thread::sleep(Duration::from_millis(100));
     }
 
-    // Дожидаемся завершения потока
+    //Waiting for close thread
     handle.join().unwrap();      
 }
 
@@ -63,7 +63,7 @@ fn move_cursor(max_x: i32, max_y: i32) {
     }
 }
 
-// Получаем информацию о всех мониторах
+// getting information about all monitors
 #[derive(Debug)]
 struct MonitorArea {
     left: i32,
@@ -110,7 +110,7 @@ fn get_monitors_info() -> Vec<MonitorArea> {
         
         unsafe{(*monitors_ptr).push(monitor);}
 
-        1 // Продолжить перечисление
+        1 // Continue
     }
 
     let mut monitors_vec = Vec::new();
@@ -124,6 +124,6 @@ fn get_monitors_info() -> Vec<MonitorArea> {
     }
 
     monitors_vec
-    //
+
 }
 
