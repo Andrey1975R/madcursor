@@ -1,0 +1,5 @@
+{
+    "type": "cppdbg",
+    "program": "${workspaceFolder}/target/debug/${workspaceFolderBasename}",
+    "miDebuggerPath": "rust-gdb"  // или "rust-lldb"
+  }

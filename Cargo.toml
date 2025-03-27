@@ -1,0 +1,11 @@
+[package]
+name = "madcursor"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rand = "0.9.0"
+winapi = { version = "0.3", features = ["winuser", "windef", "minwindef"] }
+
+[build-dependencies]
+winres = "0.1"
