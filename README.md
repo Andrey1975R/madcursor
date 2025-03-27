@@ -1,0 +1,2 @@
+# madcursor
+Simple cursor jiggler
