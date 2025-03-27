@@ -102,7 +102,7 @@ fn get_monitors_info() -> Vec<MonitorArea> {
         let monitor = MonitorArea {
             left: info.rcMonitor.left,
             top: info.rcMonitor.top,
-            right: info.rcMonitor.right - 1,  // -1 чтобы не выходить за границы
+            right: info.rcMonitor.right - 1,
             bottom: info.rcMonitor.bottom - 1,
         };
 
