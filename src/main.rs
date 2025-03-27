@@ -124,5 +124,6 @@ fn get_monitors_info() -> Vec<MonitorArea> {
     }
 
     monitors_vec
+    //
 }
 
