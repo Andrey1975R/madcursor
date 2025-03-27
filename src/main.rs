@@ -17,7 +17,7 @@ fn main() {
     let running = Arc::new(AtomicBool::new(true));
     let r = running.clone();
 
-    // Получаем информацию о всех мониторах
+    // Getting info about monitors
     let monitors = get_monitors_info();
 
     let handle = thread::spawn(move || {
@@ -59,7 +59,7 @@ fn main() {
 fn move_cursor(max_x: i32, max_y: i32) {
    
     unsafe {
-        SetCursorPos(max_x, max_y); // Перемещение курсора
+        SetCursorPos(max_x, max_y); // Move
     }
 }
 
