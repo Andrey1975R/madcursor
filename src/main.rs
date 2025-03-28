@@ -14,6 +14,7 @@ use std::time::Duration;
 
 fn main() {
 
+
     let running = Arc::new(AtomicBool::new(true));
     let r = running.clone();
 
